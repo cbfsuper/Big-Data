@@ -248,3 +248,19 @@ centos是redhat的社区版,所以使用yum命令来安装和查看ftp服务
 ##### 7.上传文件  
 (1)Filezilla软件  
 (2)windows的ftp命令行命令?
+
+##### 8.su和sudo
+su:  
+切换用户  
+临时用户bofan切换到root用户:su root  
+通过su root切换为root后拥有root的一切权限  
+切换root用户,需要输入root用户的密码
+sudo:sudo [command],临时提升一般command的权限,首先需要在/etc/sudoers给用户加上权限
+/etc/sudoers只有root用户才可以编辑  
+如何编辑/etc/sudoers?
+su root  
+visudo(不要使用vi /etc/sudoers,visudo是安全的编辑/etc/sudoers的命令) 
+/etc/sudoers文件解释
+##### 9.curl命令
+
+
